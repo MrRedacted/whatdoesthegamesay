@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #404040;
+    color: #404040;
+}
+
+a {
+    text-decoration: none;
+}
+
+#quote-box {
+    border-radius: .4rem;
+    box-shadow: .5rem .5rem .6rem black;
+    background-color: whitesmoke;
+    min-width: 50rem;
+    display: table;
+    padding: 3rem 4rem;
+    position: relative;
+    .text-box {
+        text-align: center;
+        font-size: 3rem;
+        width: 50rem;
+        clear: both;
+        i {
+            font-size: 2.3rem;
+        }
+    }
+    .author-box {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: right;
+        width: 50rem;
+    }
+    .button-box {
+        display: block;
+        width: 50rem;
+        margin: auto;
+        .button {
+            font-size: 1.4rem;
+            box-shadow: .2rem .2rem .4rem black;
+            border: none;
+            border-radius: .4rem;
+            padding: 1rem;
+            margin-top: 2rem;
+            background-color: #404040;
+            height: auto;
+            color: whitesmoke;
+            text-shadow: .1rem .1rem #404040;
+            &#new-quote {
+                float: right;
+            }
+            &#tweet-quote {
+                float: left;
+            }
+            &:hover {
+                box-shadow: .2rem .2rem .4rem .1rem black;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//Media query for mobile responsiveness and resizing
+@media (max-width: 600px) {
+    :root {
+        font-size: calc(62.5% * .75);
+    }
+    #quote-box {
+        min-width: unset;
+        width: 85vw;
+        padding: 2rem;
+        .text-box, .author-box, .button-box {
+            width: 85vw;
+        }
+    }
+}
