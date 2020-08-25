@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+:root {
+  font-size: 62.5%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #404040;
+  color: #404040;
+}
+
+a {
+  text-decoration: none;
+}
+
+#quote-box {
+  border-radius: .4rem;
+  -webkit-box-shadow: .5rem .5rem .6rem black;
+          box-shadow: .5rem .5rem .6rem black;
+  background-color: whitesmoke;
+  min-width: 50rem;
+  display: table;
+  padding: 3rem 4rem;
+  position: relative;
+}
+
+#quote-box .text-box {
+  text-align: center;
+  font-size: 3rem;
+  width: 50rem;
+  clear: both;
+}
+
+#quote-box .text-box i {
+  font-size: 2.3rem;
+}
+
+#quote-box .author-box {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: right;
+  width: 50rem;
+}
+
+#quote-box .button-box {
+  display: block;
+  width: 50rem;
+  margin: auto;
+}
+
+#quote-box .button-box .button {
+  font-size: 1.4rem;
+  -webkit-box-shadow: .2rem .2rem .4rem black;
+          box-shadow: .2rem .2rem .4rem black;
+  border: none;
+  border-radius: .4rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #404040;
+  height: auto;
+  color: whitesmoke;
+  text-shadow: .1rem .1rem #404040;
+}
+
+#quote-box .button-box .button#new-quote {
+  float: right;
+}
+
+#quote-box .button-box .button#tweet-quote {
+  float: left;
+}
+
+#quote-box .button-box .button:hover {
+  -webkit-box-shadow: .2rem .2rem .4rem .1rem black;
+          box-shadow: .2rem .2rem .4rem .1rem black;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: calc(62.5% * .75);
+  }
+  #quote-box {
+    min-width: unset;
+    width: 85vw;
+    padding: 2rem;
+  }
+  #quote-box .text-box, #quote-box .author-box, #quote-box .button-box {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 100px) {
+  body {
+    background-color: green;
+  }
+}
+/*# sourceMappingURL=style.css.map */

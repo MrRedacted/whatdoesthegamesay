@@ -10,7 +10,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome from the file system",
-            "file": "${workspaceFolder}/index.html"
+            "file": "${workspaceFolder}"
         }
     ]
 }

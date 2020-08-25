@@ -149,7 +149,6 @@ function getQuote() {
     currentOrigin = randomQuote.origin;
     let randomColor = getRandomColor();
   
-  
     $('.text-box').animate(
         {opacity: 0},
         500,
